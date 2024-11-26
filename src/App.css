@@ -29,3 +29,7 @@
   margin: 70px auto;
   padding: 15px 35px;
 }
+
+.custom-toast{
+  width: fit-content;
+}

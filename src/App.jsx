@@ -5,6 +5,8 @@ import Card from './components/Card/card';
 import Input from './components/Input/input';
 import DeleteModal from './components/DeleteModal/deleteModal';
 import EditModal from './components/EditModal/editModal';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { useState } from 'react';
 
@@ -19,6 +21,7 @@ function App() {
   const onAddElement = () => {
     setInput([...input, inputData]);
     setInputData('');
+    toast.success('added successfully',{className:'custom-toast'});
   };
 
   const onkeypress = event => {
@@ -69,10 +72,12 @@ function App() {
     setInput([...input]);
     setEditShowModal(false);
   };
-  // console.log(editIndex);
+  
 
   return (
     <div className="main">
+
+      <ToastContainer />
       <DeleteModal
         show={showModal}
         noDelClick={onNoDelClick}
