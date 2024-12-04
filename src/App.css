@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Sour Gummy', sans-serif;
+  font-family: sans-serif;
 }
 
 .main {
@@ -30,6 +30,25 @@
   padding: 15px 35px;
 }
 
-.custom-toast{
+.custom-toast {
   width: fit-content;
+}
+
+@media (max-width: 640px) {
+  .userInputField {
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .todos {
+    width: 95%;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .todos {
+    width: 100%;
+  }
 }

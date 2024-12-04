@@ -102,7 +102,7 @@ function App() {
           onchange={onInputChange}
           inputValue={inputData}
         />
-        <Button title="Add" onclick={onAddElement} width="300px" hight="60px" />
+        <Button title="Add" onclick={onAddElement}  />
       </div>
       <div className="todos">
         {input.map((item, index) => {

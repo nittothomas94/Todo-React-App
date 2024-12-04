@@ -22,3 +22,10 @@
 i:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 640px){
+  .card{
+    width: 100%;
+    padding: 5px;
+  }
+}

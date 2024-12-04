@@ -1,5 +1,11 @@
 .userInput {
-  width: 590px;
+  width: 80%;
   height: 55px;
   font-size: 23px;
+}
+
+@media (max-width: 640px) {
+  .userInput {
+    height: 100px;
+  }
 }

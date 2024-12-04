@@ -1,9 +1,15 @@
 button {
   width: 300px;
   height: 60px;
-  background-color: #7a8f97;
+  border-radius: 20px;
+}
+button:active {
+  transform: scale(0.9);
 }
 
-button:active{
-    transform: scale(0.9);
+@media (max-width: 640px) {
+  button {
+    width: 100px;
+    height: 40px;
+  }
 }
