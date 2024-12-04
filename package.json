@@ -1,16 +1,16 @@
 {
-  "homepage": "https://github.com/nittothomas10/Todo-App",
   "name": "05-todo",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://nittothomas94.github.io/Todo-Application",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "preload": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
